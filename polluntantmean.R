@@ -70,9 +70,9 @@ corr <- function(directory, threshold = 0) {
     file_data <- read.csv(file_dir)
     # remove NA's
     file_data <- subset(file_data,complete.cases(file_data))        
-    # and calculate the cor and accumulate it in the corellation vector.
+    # Calculate the cor, Accumulate it in correlation vector
     correlation <- c(correlation,cor(file_data$nitrate,file_data$sulfate))    
   }
- 
+  # output correlation 
   correlation
 }
