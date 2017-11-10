@@ -35,7 +35,7 @@ gdp<-read.csv(file.choose(), header=TRUE)
 View(gdp)
 gdp<-gdp[5:235,]
 education<-read.csv(file.choose(), header=TRUE)
-mean(as.numeric(gsub(",", "", gdp1$X.3)), na.rm = TRUE)
+mean(as.numeric(gsub(",", "", gdp$X.3)), na.rm = TRUE)
 
 #count the number of countries whose name begins with "United"
 grep("^United", gdp$X.2)
